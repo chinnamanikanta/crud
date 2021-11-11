@@ -1,0 +1,33 @@
+{
+    "user" : [
+        {
+            "name":"manikanta",
+            "gmail":"mani@123gmail.com",
+            "contact":"6281543384",
+            "address":"kakinada",
+            "id":1
+        },
+        {
+            "name":"ramu",
+            "gmail":"ramu@123gmail.com",
+            "contact":"6281544384",
+            "address":"Tuni",
+            "id":2
+        },
+        {
+            "name":"ravi",
+            "gmail":"ravi@123gmail.com",
+            "contact":"6381543384",
+            "address":"vizag",
+            "id":3
+        }
+
+
+
+    ]
+
+
+
+
+
+}
