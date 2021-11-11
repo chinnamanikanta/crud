@@ -9,11 +9,12 @@ export const getUsers = (users) => {
 }
 
 export const loadUsers = () => {
-    return (dispatch) => {
+    return function(dispatch) {
+        console.log("mani")
 
-        axios.get('http://localhost:5000/user').then((res) => {
-console.log(res)
-            dispatch(getUsers(res))
+        axios.get(`${process.env.REACT_USER_API}`).then((res) => {
+console.log("res", res)
+            dispatch(getUsers(res.data))
         })
         .catch(error => console.log((error)))
 
