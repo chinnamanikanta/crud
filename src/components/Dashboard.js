@@ -8,7 +8,7 @@ const Dashboard = () => {
 const dispatch = useDispatch()
 
     useEffect(() => {
-        loadUsers(dispatch)
+        dispatch(loadUsers())
 
 
 
