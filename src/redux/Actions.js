@@ -8,8 +8,8 @@ export const getUsers = (users) => {
     }
 }
 
-export const loadUsers = () => {
-    return (dispatch) => {
+export const loadUsers = (dispatch) => {
+    return () => {
 
         axios.get('http://localhost:5000/user').then((res) => {
             dispatch(getUsers(res.data))
