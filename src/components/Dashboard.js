@@ -6,6 +6,7 @@ import { loadUsers } from '../redux/Actions'
 const Dashboard = () => {
     const users = useSelector((state) => state.users)
 const dispatch = useDispatch()
+
     useEffect(() => {
         loadUsers(dispatch)
 
