@@ -6,7 +6,12 @@ const Dashboard = () => {
     console.log(users)
     return (
         <div>
-            This is dashBoard
+          <table>
+              <tbody>
+                  
+                  mani
+              </tbody>
+          </table>
         </div>
     )
 }
