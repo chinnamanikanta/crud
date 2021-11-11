@@ -8,10 +8,12 @@ export const getUsers = (users) => {
     }
 }
 
-export const loadUsers = (dispatch) => {
-    return () => {
+export const loadUsers = () => {
+    return (dispatch) => {
 
         axios.get('http://localhost:5000/user').then((res) => {
+            console.log(res)
+            
             dispatch(getUsers(res.data))
         })
         .catch(error => console.log((error)))
