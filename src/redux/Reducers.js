@@ -1,4 +1,4 @@
-
+import * as types from './ActionTypes'
 
 const initialState = {
     users:[],
@@ -9,6 +9,12 @@ const initialState = {
 const userReducer = (state=initialState,{type,payload}) => {
 
     switch(type) {
+
+        case types.GET_USERS : 
+        return {
+            ...state,
+            users:payload
+        }
 
         default :
             return state
