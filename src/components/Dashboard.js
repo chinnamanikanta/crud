@@ -15,7 +15,7 @@ const dispatch = useDispatch()
 
     })
 
-    console.log(users)
+    console.log("users", users)
     return (
         <div>
           <table>
